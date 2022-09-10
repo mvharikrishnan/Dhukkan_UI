@@ -1,10 +1,11 @@
 import 'package:custom_ui_design/Screens/catalogue.dart';
+import 'package:custom_ui_design/Screens/dhukkan_premium.dart';
 import 'package:custom_ui_design/Screens/payments_screen.dart';
-import 'package:custom_ui_design/widgets/appBar.dart';
+//import 'package:custom_ui_design/widgets/appBar.dart';
 import 'package:custom_ui_design/widgets/cards.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter/src/foundation/key.dart';
-import 'package:flutter/src/widgets/framework.dart';
+//import 'package:flutter/src/foundation/key.dart';
+//import 'package:flutter/src/widgets/framework.dart';
 // ignore_for_file: prefer_const_constructors
 
 class ManageStoreScreen extends StatefulWidget {
@@ -63,10 +64,15 @@ class _ManageStoreScreenState extends State<ManageStoreScreen> {
                 labeltext: 'Store OR\nCode',
                 icon: Icons.qr_code_scanner_sharp,
                 color: Colors.grey),
-            storeCard(
-                labeltext: 'Extra\nCharges',
-                icon: Icons.request_page_sharp,
-                color: Colors.purple),
+            InkWell(
+              onTap: () {
+                 Navigator.of(context).push(MaterialPageRoute(builder: (ctx)=>DhukkanPreimium() ));
+              },
+              child: storeCard(
+                  labeltext: 'Extra\nCharges',
+                  icon: Icons.request_page_sharp,
+                  color: Colors.purple),
+            ),
             storeCard(
               labeltext: 'Order\nForm',
               icon: Icons.format_align_justify_outlined,

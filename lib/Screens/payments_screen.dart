@@ -4,8 +4,6 @@ import 'package:custom_ui_design/widgets/transaction_limit_box.dart';
 import 'package:custom_ui_design/widgets/transactions.dart';
 import 'package:custom_ui_design/widgets/transcation_products.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter/src/foundation/key.dart';
-import 'package:flutter/src/widgets/framework.dart';
 
 // ignore_for_file: prefer_const_constructors
 class Payment_Screen extends StatelessWidget {
