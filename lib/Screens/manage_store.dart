@@ -1,3 +1,4 @@
+import 'package:custom_ui_design/Screens/catalogue.dart';
 import 'package:custom_ui_design/Screens/payments_screen.dart';
 import 'package:custom_ui_design/widgets/appBar.dart';
 import 'package:custom_ui_design/widgets/cards.dart';
@@ -31,10 +32,15 @@ class _ManageStoreScreenState extends State<ManageStoreScreen> {
           mainAxisSpacing: 15,
           childAspectRatio: 1.4,
           children: [
-            storeCard(
-                labeltext: 'Managing Designs',
-                icon: Icons.speaker_rounded,
-                color: Colors.orange),
+            InkWell(
+              onTap:() {
+                Navigator.of(context).push(MaterialPageRoute(builder: (ctx)=>CatelogueScreen() ));
+              }, 
+              child: storeCard(
+                  labeltext: 'Managing Designs',
+                  icon: Icons.speaker_rounded,
+                  color: Colors.orange),
+            ),
             InkWell(
               onTap: () {
                 //navigtion to payment Screen
