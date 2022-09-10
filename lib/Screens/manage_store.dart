@@ -1,3 +1,4 @@
+import 'package:custom_ui_design/Screens/additionsal_info_screen.dart';
 import 'package:custom_ui_design/Screens/catalogue.dart';
 import 'package:custom_ui_design/Screens/dhukkan_premium.dart';
 import 'package:custom_ui_design/Screens/payments_screen.dart';
@@ -52,10 +53,15 @@ class _ManageStoreScreenState extends State<ManageStoreScreen> {
                   icon: Icons.currency_rupee_sharp,
                   color: Colors.green),
             ),
-            storeCard(
-                labeltext: 'Discount Coupons',
-                icon: Icons.discount_outlined,
-                color: Color.fromARGB(255, 236, 208, 22)),
+            InkWell(
+              onTap: () {
+                 Navigator.of(context).push(MaterialPageRoute(builder: (ctx)=>AdditionalInfoScreen() ));
+              },
+              child: storeCard(
+                  labeltext: 'Discount Coupons',
+                  icon: Icons.discount_outlined,
+                  color: Color.fromARGB(255, 236, 208, 22)),
+            ),
             storeCard(
                 labeltext: 'My\nCustomers',
                 icon: Icons.people_alt,
