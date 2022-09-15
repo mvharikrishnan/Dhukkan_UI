@@ -52,12 +52,12 @@ class _AdditionalInfoScreenState extends State<AdditionalInfoScreen> {
           const ListTileWidget(
               text: 'Sign Out', iconstart: Icons.logout_outlined),
                 SizedBox(
-              height:400,
+              height:450,
               child: Column(
                 mainAxisAlignment: MainAxisAlignment.end,
                 children: [
-                  customtext(text: 'Version',color: Colors.grey,),
-                  customtext(text: '2.4.3',color: Colors.grey,)
+                const  customtext(text: 'Version',color: Colors.grey,),
+                const  customtext(text: '2.4.3',color: Colors.grey,)
                 ],
               ),
             )
