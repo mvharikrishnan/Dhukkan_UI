@@ -111,6 +111,7 @@ class TranscationProducts extends StatelessWidget {
                                   backgroundColor: Colors.green,
                                   radius: 5,
                                 ),
+                                SizedBox(width: 10,),
                                 Text(
                                   'Successfull',
                                   style: TextStyle(
